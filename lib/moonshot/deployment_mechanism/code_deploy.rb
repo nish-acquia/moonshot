@@ -296,7 +296,7 @@ class Moonshot::DeploymentMechanism::CodeDeploy # rubocop:disable ClassLength
       service_role_arn: role.arn,
       auto_scaling_groups: asg_names,
       auto_rollback_configuration: {
-        enabled: false,
+        enabled: true,
         events: ['DEPLOYMENT_FAILURE', 'DEPLOYMENT_STOP_ON_ALARM']
       }
     )
