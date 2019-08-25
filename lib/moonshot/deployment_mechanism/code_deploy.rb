@@ -42,7 +42,7 @@ class Moonshot::DeploymentMechanism::CodeDeploy # rubocop:disable ClassLength
       role: DEFAULT_ROLE_NAME,
       app_name: nil,
       group_name: nil,
-      config_name: 'CodeDeployCustom2.OneAtATime')
+      config_name: 'CodeDeployDefault.OneAtATime')
     @asg_logical_ids = Array(asg)
     @optional_asg_logical_ids = Array(optional_asg)
     @app_name = app_name
